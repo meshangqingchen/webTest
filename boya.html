@@ -11,6 +11,10 @@
 		body{
 			font-size: 14px;
 			font-family: "Microsoft YaHei","SimSun";
+			height: 1500px;
+		}
+		.cl{
+			clear: both;
 		}
 		.header{
 			height:58px;
@@ -18,8 +22,6 @@
 		}
 		.inner_c{
 			width: 1000px;
-			
-			height:58px; 
 			margin: 0 auto;
 		}
 		.header .inner_c .logo{
@@ -61,7 +63,136 @@
 			padding-left: 48px;
 			padding-top: 12px;
 		}
-		
+		.banner{
+			height: 465px;
+			background-image: url(byImage/banner.jpg);
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+		.content{
+			padding-top: 50px;
+			background-color: yellow;
+			height: 650px;
+			background-image: url(byImage/indexmainbg.jpg);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+		}
+		.content .product{
+			height: 229px;
+			border-bottom: 1px solid #DBE1E7;
+			background-color: pink;
+		}
+		.content .product ul{
+			list-style: none;
+		}
+
+		.content .product ul li{
+			float: left;
+			width: 218px;
+			margin-right: 43px;
+		}
+		.content .product ul li.last{
+			margin-right: 0;
+			width: 217px;
+		}
+		.content .product ul li img{
+			width: 218px;
+			height: 130px;
+		}
+		.content .product ul li h3{
+			text-align: center;
+			line-height: 38px;
+			font-size: 14px;
+			/*加粗*/
+			font-weight: bold;
+		}
+		.content .product ul li p.djbf{
+			text-align: center;
+			/*background-color: yellow;*/
+		}
+		.content .inner_c .product ul li p.djbf a{
+			font-size: 12px;
+			color: #38B774;
+			text-decoration: none;
+			/*background-color: pink;*/
+			padding-right: 12px;
+			background-image: url(byImage/sanjiaoxing.png);
+			background-repeat: no-repeat;
+			background-position: right,center;
+		}
+		.content .inner_c .info{
+			padding-top: 53px;
+		}
+		.content .inner_c .info .boyaanews{
+			float: left;
+			width: 500px;
+			height: 314px;
+			/*background-color: red;*/
+			background:url(byImage/bynewsbg.jpg) no-repeat;
+			padding-top: 111px; 
+		}
+		.content .inner_c .info .boyaajobs{
+			float: left;
+			width: 500px;
+			height: 314px;
+			background-color: skyblue;
+			background:url(byImage/byhrbg3.jpg) no-repeat;
+		}
+		.content .inner_c .info .boyaanews ul{
+			list-style: none;
+			padding: 0 20px;
+		}
+		.content .inner_c .info .boyaanews ul li{
+			line-height: 50px;
+			border-bottom: 1px solid #DBE1E7;
+		}
+		.content .inner_c .info .boyaanews ul li span{
+			color: #AFBECF;
+			font-size: 12px;
+			padding-right: 22px;
+		}
+		.content .inner_c .info .boyaanews ul li a{
+			color: #444866;
+			text-decoration: none;
+			font-size: 14px;
+		}
+		.content .inner_c .info .boyaanews ul li a:hover{
+			color: orange;
+		}
+		/*boyaajobs*/
+		.content .inner_c .info .boyaajobs .title{
+			padding-left: 78px;
+			padding-top: 40px; 
+			
+		}
+		.content .inner_c .info .boyaajobs .title h3{
+			width: 119px;
+			height: 51px;
+			background-color: pink;
+			/*把文字 及出去 用文字不用图片的原因是 搜索引擎优化让搜索引擎可以根据文字找到*/
+			text-indent: -999em;
+		}
+		.content .inner_c .info .boyaajobs h4{
+			padding-top: 18px;
+			padding-left: 20px;
+			font-size: 14px;
+			color: white;
+			font-weight: bold;
+		}
+		.content .inner_c .info .boyaajobs ul{
+			/*text-decoration: none;*/
+			padding-left: 20px;
+			width: 305px;
+			list-style: none;
+		}
+		.content .inner_c .info .boyaajobs ul li{
+			border-bottom: 1px solid #6FDEA3;
+			/*行高撑开又能居中 文字又能居又能撑开*/
+			line-height: 37px;
+			/*height: 37px;*/
+			color: white;
+		}
+
 	</style>
 </head>
 <body>
@@ -84,6 +215,82 @@
 				<a href="" class="jrwm">
 					<img src="byImage/jrwm.png" height="34" width="100"/>
 				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 隔墙 -->
+	<div class="cl"></div>
+	<div class="banner"></div>
+	<!-- 内容 inner_c-->
+	<div class="content">
+		<div class="inner_c">
+			<div class="product">
+				<ul>
+					<li>
+						<p><img src="byImage/pro1.jpg" height="130" width="218"></p>
+						<h3>BPT宣传片</h3>
+						<p class="djbf">
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li>
+						<p><img src="byImage/pro2.jpg" height="130" width="218"/></p>
+						<h3>博雅互动宣传视频</h3>
+						<p class="djbf">
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li>
+						<p><img src="byImage/pro3.jpg" height="195" width="331"/></p>
+						<h3>斗地主</h3>
+						<p class="djbf">
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+					<li class="last">
+						<p><img src="byImage/pro4.jpg" height="195" width="331"/></p>
+						<h3>德州扑克</h3>
+						<p class="djbf">
+							<a href="#">点击播放</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="info">
+				<div class="boyaanews">
+					<ul>
+						<li class="last">
+							<span>09 / 28</span>
+							<a href="">2015博雅破壳大赛(BPT)在澳门落幕</a>
+						</li>
+						<li>
+							<span>09 / 28</span>
+							<a href="">2015博雅破壳大赛(BPT)在澳门落幕</a>
+						</li>
+						<li>
+							<span>09&nbsp;/&nbsp;28</span>
+							<a href="">2015博雅破壳大赛(BPT)在澳门落幕</a>
+						</li>
+						<li class="last">
+							<span>09 / 28</span>
+							<a href="">2015博雅破壳大赛(BPT)在澳门落幕</a>
+						</li>
+				    </ul>
+				</div>
+				<div class="boyaajobs">
+					<div class="title">
+						<h3>
+							博雅招聘
+						</h3>
+					</div>
+					<h4>专场招聘岗位:</h4>
+					<ul>
+						<li>php开发工程师</li>
+						<li>C++开发工程师</li>
+						<li>web前段开发工程师</li>
+						<li>大数据开发工程师</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
