@@ -11,7 +11,6 @@
 		body{
 			font-size: 14px;
 			font-family: "Microsoft YaHei","SimSun";
-			height: 1500px;
 		}
 		.cl{
 			clear: both;
@@ -27,7 +26,21 @@
 		.header .inner_c .logo{
 			float: left;
 			margin-right: 40px;
+			padding-left: 12px;
+			background-color: pink;
+			/*width: 174px;
+			height: 58px;*/
+			/*background-image: url(byImage/logo.png);*/
 		}
+		.header .inner_c .logo a{
+			background-image: url(byImage/logo.png);
+			background-repeat: no-repeat;
+			background-color: yellow;
+			display: block;
+			height: 58px;
+			text-indent: -999em;
+		}
+
 		.header .inner_c .nav{
 			float: left;
 		}
@@ -71,16 +84,15 @@
 		}
 		.content{
 			padding-top: 50px;
-			background-color: yellow;
 			height: 650px;
 			background-image: url(byImage/indexmainbg.jpg);
 			background-repeat: no-repeat;
 			background-position: center bottom;
+
 		}
 		.content .product{
 			height: 229px;
 			border-bottom: 1px solid #DBE1E7;
-			background-color: pink;
 		}
 		.content .product ul{
 			list-style: none;
@@ -122,6 +134,7 @@
 		}
 		.content .inner_c .info{
 			padding-top: 53px;
+			background-color: pink;
 		}
 		.content .inner_c .info .boyaanews{
 			float: left;
@@ -130,6 +143,7 @@
 			/*background-color: red;*/
 			background:url(byImage/bynewsbg.jpg) no-repeat;
 			padding-top: 111px; 
+			position: relative;
 		}
 		.content .inner_c .info .boyaajobs{
 			float: left;
@@ -137,6 +151,15 @@
 			height: 314px;
 			background-color: skyblue;
 			background:url(byImage/byhrbg3.jpg) no-repeat;
+
+		}
+		.content .inner_c .info .boyaanews .more{
+			/*绝对定位可以直接有高度 不用zhuan'kuai*/
+			position: absolute;
+			width: 66px;
+			height: 28px;
+			top: 40px;
+			left: 218px;
 		}
 		.content .inner_c .info .boyaanews ul{
 			list-style: none;
@@ -199,7 +222,10 @@
 	<div class="header">
 		<div class="inner_c">
 			<h1 class="logo">
-				<img src="byImage/logo.png" alt=""/>
+				<a href="">
+					<!-- <img src="byImage/logo.png" alt=""/> -->
+					QWERTYui欧乐堡;nwdnjn
+				</a>
 			</h1>
 			<div class="nav">
 				<ul>
@@ -258,6 +284,9 @@
 			</div>
 			<div class="info">
 				<div class="boyaanews">
+					<a href="" class="more">
+						<img src="byImage/more1.png" height="28" width="66">
+					</a>
 					<ul>
 						<li class="last">
 							<span>09 / 28</span>
