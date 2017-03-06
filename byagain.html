@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>博雅重做</title>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			height: 58px;
+			background: #191D3A;
+		}
+		.header .inner_c{
+			width: 1000px;
+			height: 58px;
+			margin: 0 auto;
+		}
+		.header .inner_c .logoh1{
+			padding-left: 15px;
+			float: left;
+		}
+		.header .inner_c .logoh1 a{
+			display: block;
+			width: 185px;
+			height: 58px;
+			background: url(byImage/logo.png);
+			text-indent: -999em;
+		}
+		.header .inner_c .nav{
+			float: left;
+			width: 607px;
+			height: 58px;
+			margin-left: 20px;
+		}
+		.header .inner_c .nav ul{
+			list-style: none;
+		}
+		.header .inner_c .nav ul li{
+			float: left;
+			width: 100px;
+			height: 58px;
+			border-left: 1px solid #252947;
+
+		}
+		.header .inner_c .nav ul li a{
+			display: block;
+			line-height: 58px;
+			text-align: center;
+			width: 100px;
+			height: 58px;
+			text-decoration: none;
+			color:white;
+			font-size: 14px;
+		}
+		.header .inner_c .nav ul li a:hover{
+			background-color: #252947;
+		}
+		.header .inner_c .jrwm{
+			/*display: block;*/
+			float: left;
+			width: 100px;
+			height: 34px;
+			background: #38B774;
+			margin-right: 48px;
+			position: relative;
+			top: 12px;
+			left: 0;
+			margin-left: 10px;
+
+			text-align: center;
+			line-height: 34px;
+			text-decoration: none;
+			font-size: 12px;
+			border-radius: 4px;
+			color: white;
+		}
+		.header .inner_c a.jrwm:hover{
+			background-color: orange;
+		}
+		.cl{
+			clear: both;
+		}
+		.banner{
+			/*background: url(byImage/banner.jpg) no-repeat center top;*/
+		
+			height: 463px;
+			background: url(byImage/banner.jpg);
+			position: relative;
+		}
+		.banner .circles{
+			width: 120px;
+			height: 16px;
+			position: absolute;
+			bottom: 18px;
+			left: 50%;
+			margin-left: -60px;	
+			
+		}
+		.banner .circles ol{
+			list-style: none;
+			padding-top: 2px;
+		}
+		.banner .circles ol li{
+			float: left;
+			width: 12px;
+			height: 12px;
+			background: url(byImage/dian2.fw.png);
+			margin-right: 15px;
+			cursor: pointer;
+			_fond-size: 0;
+		}
+		.banner .circles ol li.first{
+			background: url(byImage/dian3.fw.png);
+		}
+		.banner .circles ol li.last{
+			margin-right: 0;
+		}
+		.content{
+			height: 700px;
+			background: url(byImage/indexmainbg.jpg) no-repeat center bottom;
+		}
+		.content .inner_c{
+			width: 1000px;
+			height: 700px;
+			margin: 0 auto;
+			padding-top: 50px;
+		}
+		.content .inner_c .product{
+			height: 229px;
+			border-bottom: 1px solid gray;
+			position: relative;
+		}
+		.content .inner_c .product ul{
+			list-style: none;
+		}
+		.content .inner_c .product ul li{
+			float: left;
+			width: 218px;
+			height: 229px;
+			margin-right: 43px;
+		}
+		.content .inner_c .product ul li.last{
+			margin-right: 0;
+			width: 217px;
+		}
+		.content .inner_c .product ul li h3{
+			line-height: 38px;
+			font-size: 14px;
+			text-align: center;
+			font-weight: bold;
+			
+		}
+
+		.content .inner_c .product ul li .dibf{
+			/*文本居中，一定是加给盒子的，不能直接加给a*/
+			/*让我内部的文本居中*/
+			text-align: center;
+		}
+		.content .inner_c .product ul li .dibf a{
+			line-height: 12px;
+			font-size: 12px;
+			color: green;
+			text-decoration: none;
+			padding-right: 10px;
+			background-color: yellow;
+			background: url(byImage/sanjiaoxing.png) no-repeat right center;
+		}
+		.content .inner_c .product .circles{
+			width: 118px;
+			height: 12px;
+			position: absolute;
+			bottom: -6px;
+			left: 50%;
+			/*margin-left: 58.5px;*/
+			margin-left: -59px;
+			background: white;
+			
+		}
+		.content .inner_c .product .circles ol{
+			list-style: none;
+			padding-left: 14px;
+		}
+		.content .inner_c .product .circles ol li{
+			float: left;
+			width: 12px;
+			height: 12px;
+			margin-right: 14px;
+			background: url(byImage/dian1.fw.png) no-repeat;
+		}
+		.content .inner_c .product .circles ol li.last{
+			margin-right: 0;
+			padding-left: 14px;
+		}
+
+
+		.footer .inner_c{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.footer .inner_c .left_part{
+			float: left;
+			width: 300px;
+			height: 91px;
+			line-height: 91px;
+		}
+		.footer .inner_c .left_part a{
+			text-decoration: none;
+			color:gray;
+			font-size: 12px;
+			line-height: 91px;
+		}
+		.footer .inner_c .right_part{
+			float: left;
+			width: 700px;
+			height: 91px;
+			text-align: right;
+			color:gray;
+			font-size: 12px;
+		}
+		.footer .inner_c .right_part .jinghui{
+			width: 40px;
+			position: relative;
+			top: 20px;
+		}
+	</style>
+	<body>
+		<div class="header">
+			<div class="inner_c">
+				<h1 class="logoh1">
+					<!-- <img src="byImage/logo.png" height="58" width="185"> -->
+					<a href="#">
+						我是博雅的logo
+					</a>
+				</h1>
+				<div class="nav">
+					<ul>
+						<li><a href="#">网页栏目</a></li>
+						<li><a href="#">网页栏目</a></li>
+						<li><a href="#">网页栏目</a></li>
+						<li><a href="#">网页栏目</a></li>
+						<li><a href="#">网页栏目</a></li>
+						<li class="last"><a href="#">网页栏目</a></li>
+					</ul>
+				</div>
+				<a href="#" class="jrwm">加入我们</a>
+			</div>
+		</div>
+
+		<div class="cl"></div>
+
+		<div class="banner">
+			<div class="circles">
+				<ol>
+					<li class="first"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li class="last"></li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="inner_c">
+				<div class="product">
+					<ul>
+						<li>
+							<p>
+								<img src="byImage/pro1.jpg" height="130" width="218">
+							</p>
+							<h3>BPD宣传片</h3>
+							<p class="dibf">
+								<a href="">点击播放</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<img src="byImage/pro2.jpg" height="130" width="218">
+							</p>
+							<h3>BPD宣传片</h3>
+							<p class="dibf">
+								<a href="">点击播放</a>
+							</p>
+						</li>
+						<li>
+							<p>
+								<img src="byImage/pro3.jpg" height="130" width="218">
+							</p>
+							<h3>BPD宣传片</h3>
+							<p class="dibf">
+								<a href="">点击播放</a>
+							</p>
+						</li>
+						<li class="last">
+							<p>
+								<img src="byImage/pro4.jpg" height="130" width="218">
+							</p>
+							<h3>BPD宣传片</h3>
+							<p class="dibf">
+								<a href="">点击播放</a>
+							</p>
+						</li>
+					</ul>
+					<div class="circles">
+						<ol>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="last"></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cl"></div>
+	    
+	    <div class="footer">
+			<div class="inner_c">
+				<div class="left_part">
+					<a href="#">网站地图</a>
+					<span>|</span>
+					<a href="#">免责声明</a>
+				</div>
+				<div class="right_part">
+					明天上课啊，别不来啊，明天不休息啊。JS第一天好好听课。CSS先放放，别激动。
+					<img src="images/govIcon.gif" class="jinghui"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>	
